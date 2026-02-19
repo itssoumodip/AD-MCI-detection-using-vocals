@@ -9,7 +9,7 @@ try:
     from utils.pause_cha_word_by_word import get_report
 except ImportError:
     # If running from root
-    from backend.utils.pause_cha_word_by_word import get_report
+    from backend.utils.pause_cha_word_by_word import get_report  
 
 def extract_features_from_patient(cha_file):
     """
