@@ -3,4 +3,29 @@
 /dementia_audio
 /demantia_bank
 /patient_audio_segments
+*.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Frontend
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+
+# Misc
+temp_uploads/
+
 
