@@ -369,11 +369,11 @@ export default function Dashboard() {
                       {/* Diagnosis Badge */}
                       <div className="text-center space-y-2">
                         <p className="text-sm font-medium text-slate-500 uppercase tracking-wider">Prediction Results</p>
-                        <h3 className={`text-4xl font-bold ${prediction.prediction === 'Control' ? 'text-green-600' : 'text-amber-600'}`}>
-                          {prediction.prediction}
+                        <h3 className={`text-4xl font-bold ${prediction.predicted_diagnosis === 'Control' ? 'text-green-600' : 'text-amber-600'}`}>
+                          {prediction.predicted_diagnosis}
                         </h3>
-                        <Badge variant="outline" className={`${prediction.prediction === 'Control' ? 'bg-green-100 text-green-700 border-green-200' : 'bg-amber-100 text-amber-700 border-amber-200'} text-sm py-1 px-4`}>
-                          Confidence: {(prediction.confidence * 100).toFixed(1)}%
+                        <Badge variant="outline" className={`${prediction.predicted_diagnosis === 'Control' ? 'bg-green-100 text-green-700 border-green-200' : 'bg-amber-100 text-amber-700 border-amber-200'} text-sm py-1 px-4`}>
+                          Confidence: {prediction.confidence.toFixed(1)}%
                         </Badge>
                       </div>
 

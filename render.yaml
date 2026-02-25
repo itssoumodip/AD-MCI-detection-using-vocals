@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: neurovoice-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: https://your-neurovoice.vercel.app   # ← replace with your Vercel URL after deploying frontend
+    healthCheckPath: /health

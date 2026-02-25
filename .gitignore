@@ -3,7 +3,7 @@
 /dementia_audio
 /demantia_bank
 /patient_audio_segments
-*.md
+
 
 # Python
 __pycache__/
